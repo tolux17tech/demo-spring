@@ -5,7 +5,7 @@ pipeline {
         registry = "211223789150.dkr.ecr.us-east-1.amazonaws.com/my-docker-repo"
     }
     stages {
-        stage('Checkout Tuesday') {
+        stage('Checkout Tuesday I') {
             steps {
                 checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/akannan1087/docker-spring-boot']])
             }
